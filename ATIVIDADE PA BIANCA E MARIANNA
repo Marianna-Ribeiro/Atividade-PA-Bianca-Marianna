@@ -1,0 +1,160 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char letra;
+int qtd;
+int i;
+
+void codigos() {
+  char vetor1[qtd];
+  char vetor2[qtd];
+  int res;
+
+  for (i = 0; i < qtd; i++) {
+    printf("informe a tecla e quantidade de vezes pressionada\n");
+    scanf("%s", &vetor1);
+
+    res = (strcmp("#2=1", vetor1));
+    if (res == 0) {
+      strcat(vetor2, "a");
+    } else {
+      res = (strcmp("#2=2", vetor1));
+      if (res == 0) {
+        strcat(vetor2, "b");
+      } else {
+        res = (strcmp("#2=3", vetor1));
+        if (res == 0) {
+          strcat(vetor2, "c");
+        } else {
+          res = (strcmp("#3=1", vetor1));
+          if (res == 0) {
+            strcat(vetor2, "d");
+          } else {
+            res = (strcmp("#3=2", vetor1));
+            if (res == 0) {
+              strcat(vetor2, "e");
+            } else {
+              res = (strcmp("#3=3", vetor1));
+              if (res == 0) {
+                strcat(vetor2, "f");
+              }else{
+                res = (strcmp("#4=1", vetor1));
+                if (res == 0) {
+                  strcat(vetor2, "g");
+                }else{
+                  res = (strcmp("#4=2", vetor1));
+                  if (res == 0) {
+                    strcat(vetor2, "h");
+                  }else{
+                    res = (strcmp("#4=3", vetor1));
+                    if (res == 0) {
+                      strcat(vetor2, "i");
+                    }else{
+                      res = (strcmp("#5=1", vetor1));
+                      if (res == 0) {
+                        strcat(vetor2, "j");
+                      }else{
+                        res = (strcmp("#5=2", vetor1));
+                        if (res == 0) {
+                          strcat(vetor2, "k");
+                        }else{
+                          res = (strcmp("#5=3",vetor1));
+                          if (res == 0) {
+                            strcat(vetor2, "l");
+                          }else{
+                            res =(strcmp("#6=1",vetor1));
+                            if (res == 0) {
+                              strcat(vetor2, "m");
+                            }else{
+                              res =(strcmp("#6=2",vetor1));
+                              if (res == 0) {
+                                strcat(vetor2, "n");
+                              }else{
+                                res =(strcmp("#6=3",vetor1));
+                                if (res == 0) {
+                                  strcat(vetor2, "o");
+                                }else{
+                                  res =(strcmp("#7=1",vetor1));
+                                  if (res == 0) {
+                                    strcat(vetor2, "p");
+                                  }else{
+                                    res =(strcmp("#7=2",vetor1));
+                                    if (res == 0) {
+                                      strcat(vetor2, "q");
+                                    }else{
+                                      res =(strcmp("#7=3",vetor1));
+                                      if (res == 0) {
+                                        strcat(vetor2, "r");
+                                      }else{
+                                        res =(strcmp("#7=4",vetor1));
+                                        if (res == 0) {
+                                          strcat(vetor2, "s");
+                                        }else{
+                                          res =(strcmp("#8=1",vetor1));
+                                          if (res == 0) {
+                                            strcat(vetor2, "t");
+                                          }else{
+                                            res =(strcmp("#8=2",vetor1));
+                                            if (res == 0) {
+                                              strcat(vetor2, "u");
+                                            }else{
+                                              res =(strcmp("#8=3",vetor1));
+                                              if (res == 0) {
+                                                strcat(vetor2, "v");
+                                              }else{
+                                                res =(strcmp("#9=1",vetor1));
+                                                if (res == 0) {
+                                                  strcat(vetor2, "w");
+                                                }else{
+                                                  res =(strcmp("#9=2",vetor1));
+                                                  if (res == 0) {
+                                                    strcat(vetor2, "x");
+                                                  }else{
+                                                    res =(strcmp("#9=3",vetor1));
+                                                    if (res == 0) {
+                                                      strcat(vetor2, "y");
+                                                    }else{
+                                                      res =(strcmp("#9=4",vetor1));
+                                                      if (res == 0) {
+                                                        strcat(vetor2, "z");
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  printf("%s", vetor2);
+}
+
+
+int main() {
+  printf("Insira a quantidade de caracteres da sua palavra \n");
+  scanf("%d", &qtd);
+
+  codigos();
+
+  return 0;
+}
