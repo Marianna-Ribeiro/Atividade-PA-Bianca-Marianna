@@ -118,7 +118,10 @@ void codigos() {
                                                       res =(strcmp("#9=4",vetor1));
                                                       if (res == 0) {
                                                         strcat(vetor2, "z");
+                                                      }else{
+                                                         break;
                                                       }
+
                                                     }
                                                   }
                                                 }
