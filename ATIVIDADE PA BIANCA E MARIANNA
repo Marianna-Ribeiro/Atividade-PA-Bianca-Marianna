@@ -12,7 +12,7 @@ void codigos() {
   int res;
 
   for (i = 0; i < qtd; i++) {
-    printf("informe a tecla e quantidade de vezes pressionada\n");
+    printf("informe a tecla e quantidade de vezes pressionada. Discando: #,tecla,=,número de vezes.Ex: #2=1 para letra a, e assim por diante\n");
     scanf("%s", &vetor1);
 
     res = (strcmp("#2=1", vetor1));
